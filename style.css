@@ -200,19 +200,24 @@ body, html {
   text-align: justify;
 }
 
-/* Estilo do vídeo */
-.video_sobre {
-  flex: 1;
-  min-width: 300px;
-  max-width: 560px;
-  text-align: center;
+.instagram-media {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.video_sobre iframe,
-.video_sobre blockquote {
-  width: 100%;
-  max-width: 560px;
-  height: auto;
+
+.video_sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.instagram-media {
+  border: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 /* Ajustes responsivos */
