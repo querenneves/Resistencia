@@ -190,17 +190,29 @@ body, html {
   color: #555;
 }
 
-.video_sobre {
+.card-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  /* Ajusta o espaçamento entre os cards */
+  flex-wrap: wrap;
+  /* Faz com que os cards se ajustem em telas menores */
+  gap: 10px;
+  /* Espaço entre os cards */
 }
 
 .instagram-media {
-  max-width: 500px;
-  width: 100%;
+  flex: 1;
+  min-width: 300px;
+  /* Largura mínima dos cards */
+  max-width: 400px;
+  /* Largura máxima dos cards */
 }
+
+.zoom-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 
 @media (min-width: 768px) {
   .sub_sobre {
