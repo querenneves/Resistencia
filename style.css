@@ -192,26 +192,23 @@ body, html {
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  /* Ajusta o espaçamento entre os cards */
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  /* Faz com que os cards se ajustem em telas menores */
   gap: 10px;
-  /* Espaço entre os cards */
 }
 
 .instagram-media {
   flex: 1;
   min-width: 300px;
-  /* Largura mínima dos cards */
   max-width: 400px;
-  /* Largura máxima dos cards */
 }
 
 .zoom-card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+
 
 
 @media (min-width: 768px) {
