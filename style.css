@@ -237,3 +237,65 @@ body, html {
     font-size: 0.9rem;
   }
 }
+/* Estilo para o botão do WhatsApp */
+#robbu-whatsapp-button {
+  position: fixed;
+  top: 20px;   /* Distância do topo da tela */
+  right: 20px; /* Distância da lateral direita */
+  z-index: 9999; /* Garante que o botão fique por cima dos outros elementos */
+}
+
+/* Estilo para a imagem do WhatsApp */
+#robbu-whatsapp-button img {
+  width: 50px; /* Ajuste o tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a mensagem de tooltip (aquela que diz 'Denuncie') */
+#robbu-whatsapp-button .rwb-tooltip {
+  position: absolute;
+  top: 5px;    /* Ajusta a distância para cima em relação ao botão */
+  right: 0;    /* Alinha a mensagem à direita do botão */
+  color: #fff; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno da mensagem */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  z-index: 10000; /* Garantir que a mensagem fique acima de outros elementos */
+  font-weight: bold; 
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #robbu-whatsapp-button {
+    top: 20px;   /* Distância do topo em dispositivos móveis */
+    right: 15px; /* Ajuste a distância da lateral direita */
+  }
+
+  #robbu-whatsapp-button img {
+    width: 40px; /* Diminui o tamanho da imagem */
+  }
+
+  #robbu-whatsapp-button .rwb-tooltip {
+    top: 10px;   /* Ajusta a posição da mensagem mais para cima */
+    font-size: 12px;  /* Ajuste o tamanho da fonte */
+  }
+}
+
+/* Responsividade para telas muito pequenas, como celulares */
+@media (max-width: 480px) {
+  #robbu-whatsapp-button {
+    top: 10px;   /* Distância mais próxima do topo em telas pequenas */
+    right: 10px; /* Distância mais próxima da lateral direita */
+  }
+
+  #robbu-whatsapp-button img {
+    width: 35px; /* Diminui ainda mais o tamanho da imagem */
+  }
+
+  #robbu-whatsapp-button .rwb-tooltip {
+    top: 5px;   /* Ajusta a posição da mensagem mais para cima */
+    font-size: 12px;  /* Ajuste o tamanho da fonte */
+  }
+}
+
