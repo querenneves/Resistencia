@@ -9,7 +9,7 @@ body, html {
   overflow-x: hidden;
   font-family: Arial, sans-serif;
   padding-bottom: 60px;
-  background-color: #7faadbec; 
+  background-color: #a9c1ddec; 
 }
 /* Adicione isso ao seu CSS, ajustando .main-content para a classe que envolve seu conteúdo principal */
 .main-content {
@@ -312,7 +312,7 @@ a {
   max-width: 300px;
   position: relative;
   height: auto; /* Permite que a altura se ajuste com o conteúdo */
-  background: linear-gradient(-45deg, #7faadbec 0%, #080674 100%);
+  background: linear-gradient(-45deg, #0b132b 0%, #6a0572 50%, #d785d3 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
