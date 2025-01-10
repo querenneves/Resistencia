@@ -1,0 +1,224 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px;
+    background-color: #a9c1ddec; 
+  }
+  .master_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sub_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px;
+    gap: 20px;
+  }
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  button {
+    --primary-color: #111;
+    --hovered-color: #c84747;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  button p::before {
+    position: absolute;
+    content: "Confira";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  button:hover::after {
+    width: 100%;
+  }
+  
+  button:hover p::before {
+    width: 100%;
+  }
+  
+  button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color);
+  }
+  
+  button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+ /* Contêiner principal */
+.curriculo-container {
+    margin: 40px auto; /* Ajusta espaço geral */
+    max-width: 600px; /* Largura máxima */
+    text-align: center; /* Centraliza título e flecha */
+    flex: 1; /* Ocupa o espaço restante */
+  }
+  
+  /* Título */
+  .curriculo-container h1 {
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    font-size: 28px; /* Tamanho do título */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Linha horizontal */
+  .curriculo-container hr {
+    border: none; /* Remove borda padrão */
+    border-top: 2px solid #333; /* Estilo da linha */
+    margin: 20px auto; /* Espaçamento ao redor da linha */
+    width: 50%; /* Largura da linha */
+  }
+  
+  /* Flecha no final da linha */
+  .arrow-line {
+    position: relative;
+    margin: -10px auto 20px; /* Posiciona a flecha em relação à linha */
+    width: 0; /* Sem largura visível */
+    height: 0; /* Sem altura visível */
+    border-left: 10px solid transparent; /* Lado esquerdo transparente */
+    border-right: 10px solid transparent; /* Lado direito transparente */
+    border-top: 10px solid #333; /* Flecha apontando para cima */
+  }
+  
+  /* Texto do parágrafo */
+  .curriculo-container p {
+    margin-top: 40px; /* Espaçamento acima do texto */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    text-align: justify; /* Justificação do texto */
+    color: #000000; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  .btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-voltar:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-voltar i {
+    margin-right: 8px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .btn-voltar {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  footer {
+    background-color: #aaa2a26c;
+    color: rgb(61, 48, 48);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não afete o layout */
+  }
+  
+  .footer-text {
+    font-size: 16px;
+  }
+  .fireworks-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: fireworks 1s infinite;
+}
+
+.firework:nth-child(1) {
+  left: 25%;
+  animation-duration: 1.5s;
+}
+
+.firework:nth-child(2) {
+  left: 50%;
+  animation-duration: 2s;
+}
+
+.firework:nth-child(3) {
+  left: 75%;
+  animation-duration: 1.8s;
+}
+
+@keyframes fireworks {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-200px) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+}
+
+    
